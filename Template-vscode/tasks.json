@@ -1,0 +1,99 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    /*  This is a task to test things
+    {"label": "print something 😘",
+    "type": "shell",
+    "command": "echo",
+    "args": [
+      "-c",
+      "${fileDirname}/out/${fileBasenameNoExtension}",
+      "${fileDirname}"
+    ],
+    "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+    },
+    */
+
+
+    // 1. create the out directory
+    {
+      "label": "CreateOutputDir",
+      "type": "shell",
+      "command": "mkdir",
+      "args": [
+        "-p",
+        "${fileDirname}/out"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": false,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+    },
+    
+    // 2. Build all .cpp files
+    {
+      "label": "Build C++",
+      "type": "shell",
+      "command": "g++",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "-Wall",
+        "-std=c++17",
+        "${fileDirname}/*.cpp", // all cpp files
+        "-o",
+        "${fileDirname}/out/${fileBasenameNoExtension}",
+      ],
+      "problemMatcher": "$gcc",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": false,
+        "reveal": "silent",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "dependsOn": "CreateOutputDir"
+    },
+
+    // 3. Run the 'main' binary
+    {
+      "label": "Run c++ program",
+      "type": "shell",
+      "command": "${fileDirname}/out/${fileBasenameNoExtension}",
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": false,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": false,
+        "clear": true
+      },
+      "dependsOn": "Build C++"
+    },
+  ],
+}
