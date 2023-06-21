@@ -55,7 +55,8 @@
         "-g",
         "-Wall",
         "-std=c++17",
-        "${fileDirname}/*.cpp", // all cpp files
+        "${file}", // only the current cpp file
+        // "${fileDirname}/*.cpp", // all cpp files
         "-o",
         "${fileDirname}/out/${fileBasenameNoExtension}",
       ],
