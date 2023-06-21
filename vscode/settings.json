@@ -1,0 +1,251 @@
+{
+  //# Editor settings
+  "editor.lightbulb.enabled": false,
+  "scm.diffDecorations": "overview",
+  "editor.selectionHighlight": true,
+  "editor.occurrencesHighlight": true,
+  "workbench.editor.showIcons": false,
+  // "editor.cursorStyle": "line-thin",
+  "editor.cursorStyle": "block-outline",
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#0000",
+    "editorCursor.background": "#000000",
+    "editor.lineHighlightBorder": "#2b2a2a",
+    "tab.activeBackground": "#151515",
+    "tab.unfocusedActiveBackground": "#151515",
+    "tab.inactiveBackground": "#2a2a2a",
+    "editor.foldBackground": "#0000",
+    // "editorCursor.foreground": "#bbbb0e",
+    // "tab.unfocusedInactiveBackground": "#2a2a2a",
+    // "editor.wordHighlightBorder": "#9c82d4"
+    // "editor.wordHighlightBackground": "#1E1E1E",
+    // "editor.wordHighlightTextBackground": "#1E1E1E"
+    // "editor.wordHighlightTextBorder": "#ff0000",
+    // "editor.wordHighlightStrongBackground": "#ff0000",
+    // "editor.wordHighlightStrongBorder": "#ff0000"
+    // Dark Mode
+    // "tab.activeBorder": "#ffee00",
+    "tab.unfocusedActiveBorder": "#0000"
+    // "tab.inactiveModifiedBorder": "#ff0000",
+    // "tab.unfocusedInactiveModifiedBorder": "#ff0000"
+    // Light Mode
+    // "tab.activeBorder": "#2d2d2d"
+  },
+  "editor.comments.insertSpace": true,
+  "editor.comments.ignoreEmptyLines": true,
+  "editor.renderLineHighlight": "line",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "Fira Code,'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.snippetSuggestions": "bottom",
+  "editor.wordBasedSuggestions": false,
+  "editor.suggest.localityBonus": true,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.suggestSelection": "recentlyUsed",
+    "editor.suggest.showKeywords": false
+  },
+  "files.defaultLanguage": "{activeEditorLanguage}",
+  "javascript.validate.enable": false,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.build": true,
+    "**/.gh-pages": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": false
+  },
+  "grunt.autoDetect": "off",
+  "gulp.autoDetect": "off",
+  "npm.runSilent": true,
+  "explorer.confirmDragAndDrop": false,
+  "editor.formatOnPaste": false,
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.smoothScrolling": true,
+  "php.suggest.basic": false,
+  "editor.linkedEditing": true,
+  "workbench.layoutControl.enabled": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "pubspec.yaml": "pubspec.lock,pubspec_overrides.yaml,.packages,.flutter-plugins,.flutter-plugins-dependencies,.metadata",
+    "*.dart": "${capture}.g.dart",
+    "*.ts": "${capture}.typegen.ts",
+    "*.tsx": "${capture}.typegen.ts",
+    "*.mts": "${capture}.typegen.ts",
+    "*.cts": "${capture}.typegen.ts"
+  },
+  "workbench.editor.enablePreview": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "workbench.startupEditor": "none",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "source": "PowerShell",
+      "icon": "terminal-powershell"
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Ubuntu (WSL)": {
+      "path": "C:\\WINDOWS\\System32\\wsl.exe",
+      "args": ["-d", "Ubuntu"]
+    }
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "workbench.panel.defaultLocation": "bottom",
+  "cSpell.userWords": [],
+  "zenMode.hideTabs": false,
+  "zenMode.hideStatusBar": false,
+  "[markdown]": {
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint"
+  },
+  "terminal.integrated.fontSize": 16,
+  "settingsSync.keybindingsPerPlatform": true,
+  "python.envFile": "",
+  "python.terminal.activateEnvironment": false,
+  "editor.tabSize": 2,
+  "zenMode.hideLineNumbers": false,
+  "explorer.confirmDelete": false,
+
+  // Language specific indentation
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.formatOnType": true
+  },
+  "editor.renderWhitespace": "none",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+
+  "editor.guides.bracketPairs": true,
+  "editor.accessibilitySupport": "off",
+  "files.autoSave": "afterDelay",
+  "git.openRepositoryInParentFolders": "never",
+  "cmake.configureOnOpen": true,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.runInTerminal": true,
+  "c-cpp-compile-run.should-show-notifications": false,
+  "editor.codeLens": false,
+
+  "extensions.ignoreRecommendations": true,
+
+  //# Better Comments settings
+  "better-comments.tags": [
+    {
+      "tag": "!",
+      "color": "#FF2D00",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "?",
+      "color": "#3498DB",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "//",
+      "color": "#474747",
+      "strikethrough": true,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "todo",
+      "color": "#FF8C00",
+      "strikethrough": false,
+      "underline": true,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    },
+    {
+      "tag": "#",
+      "color": "#E78BDA",
+      "strikethrough": false,
+      "underline": false,
+      "backgroundColor": "transparent",
+      "bold": false,
+      "italic": false
+    }
+  ],
+
+  //# VIM Settings
+  "vim.easymotion": true,
+  "vim.leader": " ",
+  // press \\/ to activate the highlight search, and then type the word you want to search,
+  // then press enter while looking at the word you want to jump to, now that word will have a character, press that character to jump
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<space>", "s"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<space>", "k"],
+      "commands": ["easymotion"]
+    }
+  ],
+  "vim.foldfix": true,
+  "vim.handleKeys": {
+    "<C-d>": true,
+    "<C-s>": false,
+    "<C-z>": false
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "right"
+  },
+  "breadcrumbs.enabled": false,
+  "git.decorations.enabled": false,
+  "material-icon-theme.files.associations": {},
+  "lldb.library": "/Applications/Xcode.app/Contents/SharedFrameworks/LLDB.framework/Versions/A/LLDB",
+  "debug.onTaskErrors": "debugAnyway",
+  "editor.fontSize": 14,
+  "workbench.iconTheme": "vscode-great-icons",
+
+  //# TERMINAL Settings
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "terminal.integrated.fontWeight": "500",
+  "workbench.activityBar.visible": false,
+}
