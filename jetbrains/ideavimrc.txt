@@ -9,7 +9,7 @@ set ideajoin
 set surround
 set easymotion
 
-" Extensions 
+" Extensions
 set surround
 
 set NERDTree
@@ -17,8 +17,12 @@ let g:NERDTreeMapActivateNode='l'
 let g:NERDTreeMapJumpParent='h'
 
 Plug 'easymotion/vim-easymotion'
-map <leader>J <Plug>(easymotion-s)
+" search all
+map <leader>f <Plug>(easymotion-s)
+" search after
 map <leader>j <Plug>(easymotion-f)
+" search before
+map <leader>k <Plug>(easymotion-F)
 
 
 " Window navigation -----------------------------------
@@ -45,3 +49,4 @@ nnoremap ]] :action MethodDown<CR>
 
 """ Distraction Free Mode ---------------------------------
 nnoremap <c-z> :action ToggleDistractionFreeMode<CR>
+
